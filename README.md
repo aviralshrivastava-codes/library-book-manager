@@ -2,40 +2,38 @@
 
 ## Overview
 
-Library Book Manager is a simple **terminal-based Python project** that helps users manage basic library book operations.
+This is a terminal-based Python project for handling basic library book work. Run it, pick a number from the menu, and it does that job.
 
-The program allows users to add books, view books, search for books, issue and return books, and check the current status of a book.
+It covers the usual stuff: adding books, viewing the list, searching, issuing, returning, and checking whether a particular book is in or out.
 
 ## Features
 
-- Add a new book with its title and author.
-- Prevent duplicate book titles.
-- View all books in the library.
-- Search for a book by title.
-- Issue an available book.
-- Return an issued book.
-- Check whether a book is Available or Issued.
-- Handle empty inputs and invalid menu choices.
-- Prevent issuing a book that is already issued.
-- Prevent returning a book that is already available.
+- Add a book with a title and author
+- Duplicate titles are rejected
+- View all the books in the library
+- Search by title
+- Issue a book if it's available
+- Return a book that was issued
+- Check if a book is Available or Issued
+- Empty inputs and wrong menu choices get handled instead of crashing the program
+- A book that's already issued can't be issued again
+- A book that's already available can't be returned
 
 ## Technologies / Tools Used
 
-- **Programming Language:** Python
-- **Interface:** Terminal / Command Line
-- **Data Structures:** List and Dictionary
-- **Code Editor:** Visual Studio Code
-- **Version Control:** Git and GitHub
+- **Language:** Python
+- **Interface:** Terminal / command line
+- **Data structures:** List and dictionary
+- **Editor:** Visual Studio Code
+- **Version control:** Git and GitHub
 
-No external Python libraries are required.
+No external Python libraries needed.
 
 ## How to Install and Run
 
 ### 1. Install Python
 
-Make sure Python is installed on your computer.
-
-Check the Python version using:
+Check that Python is already on your computer:
 
 ```bash
 python3 --version
@@ -43,7 +41,7 @@ python3 --version
 
 ### 2. Download or Clone the Repository
 
-Download the project from GitHub or clone the repository using Git.
+Download the project from GitHub, or clone it with Git.
 
 ### 3. Open the Project
 
@@ -51,17 +49,17 @@ Open the project folder in Visual Studio Code.
 
 ### 4. Run the Program
 
-Open the terminal in the project folder and run:
+In the terminal, from the project folder:
 
 ```bash
 python3 library.py
 ```
 
-If your Python file has a different name, replace `library.py` with the correct filename.
+Named your file something else? Use that name instead of `library.py`.
 
 ## How to Use
 
-After running the program, the main menu will appear:
+When the program starts, this menu shows up:
 
 ```text
 ===== LIBRARY BOOK MANAGER =====
@@ -74,9 +72,9 @@ After running the program, the main menu will appear:
 7. Exit
 ```
 
-Enter the number of the operation you want to perform.
+Enter the number for the operation you want.
 
-For example:
+Here's adding a book, for example:
 
 ```text
 Enter your choice: 1
@@ -85,11 +83,11 @@ Enter author name: John
 Book added successfully!
 ```
 
-The book can then be viewed, searched, issued, returned, or checked for its current status.
+From there you can view the book, search for it, issue it, return it, or check its status.
 
 ## Testing
 
-The project can be tested by performing the following operations:
+Try each of these and compare what happens with the expected result:
 
 | Test | Expected Result |
 | --- | --- |
